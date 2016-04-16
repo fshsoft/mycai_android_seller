@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hour_gird_text"
+        style="@style/TextViewStyle"
+        android:text="00:00"
+        android:background="@drawable/hour_bg_nocolor"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"/>
+</LinearLayout>

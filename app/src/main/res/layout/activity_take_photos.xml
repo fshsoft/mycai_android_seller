@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yizan.community.business.ui.TakePhotosActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@android:color/black"
+        tools:context="${relativePackage}.${activityClass}" />
+
+    <com.yizan.community.business.widget.MyGridView
+        android:id="@+id/gv_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#031A14"
+        android:minHeight="@dimen/text_view_height"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:horizontalSpacing="@dimen/margin"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:padding="@dimen/margin"
+        />
+
+</LinearLayout>

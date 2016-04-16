@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.GoodAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_good_edit_head"/>
+
+            <include layout="@layout/gray_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_goods_name"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="@string/msg_must_input"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <com.yizan.community.business.widget.MyListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"/>
+
+            <include layout="@layout/gray_line"/>
+
+            <include layout="@layout/gray_line_height"/>
+
+            <LinearLayout
+                android:id="@+id/ll_norms_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"/>
+
+                    <EditText
+                        android:id="@+id/et_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msg_yuan"
+                        android:textColor="@color/textGray"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/gray_line_margin"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inventory"/>
+
+                    <EditText
+                        android:id="@+id/et_stock"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:maxLength="8"
+                        android:numeric="signed"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/gray_line"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_add_norm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:drawableLeft="@drawable/ic_add"
+                android:drawablePadding="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin"
+                android:paddingTop="@dimen/margin_small"
+                android:text="@string/add_goods_norms"
+                android:textColor="@color/textPrice"
+                />
+
+            <include layout="@layout/gray_line"/>
+
+            <include layout="@layout/gray_line_height"/>
+
+            <LinearLayout
+                android:id="@+id/ll_good_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/goods_describe"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+            <include layout="@layout/comm_divide_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/wv_brief"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></WebView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include layout="@layout/gray_line"/>
+
+    <include layout="@layout/layout_good_edit_bottom"/>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/repetition_text"
+            style="@style/TextViewStyle"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/service_repetition" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repetition_text"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/margin">
+
+            <TextView
+                android:id="@+id/monday_text"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/monday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tuesday_text"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/tuesday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wednesday_text"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/wednesday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/thursday_text"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/thursday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/friday_text"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/friday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/saturday_text"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin_small"
+                android:text="@string/saturday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sunday_text"
+                style="@style/TextViewStyle.Gray"
+                android:text="@string/sunday"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/ic_arrow_right" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_time"
+        style="@style/TextViewStyle"
+        android:layout_below="@id/time_layout"
+        android:layout_margin="@dimen/margin_small"
+        android:text="@string/please_time_settings" />
+
+    <LinearLayout
+        android:id="@+id/bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/addweek_bt"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lin_view"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/bt_layout"
+        android:background="@color/gray" />
+
+    <GridView
+        android:id="@+id/time_gview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin_view"
+        android:layout_below="@id/text_time"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:paddingBottom="@dimen/margin_micro"
+        android:paddingTop="@dimen/margin_micro"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"></GridView>
+
+</RelativeLayout>

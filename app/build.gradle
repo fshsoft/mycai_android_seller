@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    signingConfigs {
+        release {
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.yizan.community.business"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 10
+        versionName "1.0"
+        multiDexEnabled true
+        buildConfigField 'boolean', 'MULTI_CATES', 'true'
+        buildConfigField 'boolean', 'isTestAndDemo', 'false'
+        buildConfigField 'boolean', 'BANK_CARD_NAME', 'true' // 是否显示银行开户名
+        buildConfigField 'String', 'STAT_KEY', '"A84EJZLI75PH"'
+        buildConfigField 'String', 'APP_CHANNEL', '"FanWe"'
+        buildConfigField 'String','MAP_ID','"WNRBZ-QBKA3-DD43U-3C6BS-TDRYT-67FSH"'
+        buildConfigField 'String', 'WX_APP_ID', '"wxa2ca4ec0aa044c24"'
+        manifestPlaceholders = [TENCENTMAPSDK_VALUE: 'WNRBZ-QBKA3-DD43U-3C6BS-TDRYT-67FSH',JPUSH_APPKEY_VALUE: '51e2d29d39e52a23aeda0126']
+    }
+    productFlavors {
+        shnow_cn {
+            versionCode 1
+            versionName "1.0"
+        }
+
+
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(output.outputFile.parent, ((variant.name.length()>4 && "www_".equals(variant.name.substring(0,4)) && Character.isDigit(variant.name.charAt(4)))?variant.name.replaceFirst("www_","").replace("Release","-Release"):variant.name.replace("Release","-Release")) + "-b-v" + variant.versionName + "-" + variant.versionCode + ".apk");
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile project(':PagerSlidingTabStrip')
+    compile 'in.srain.cube:cube-sdk:1.0.44@aar'
+    compile 'com.github.2tu:ZYLibrary:1.0.11'
+    shnow_cnCompile project(path: ':seallibrary', configuration: 'shnow_cnRelease')
+    compile 'com.android.support:cardview-v7:22.0.0'
+}

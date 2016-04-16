@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:dslv="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.GoodsListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="@dimen/margin_small"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_sel_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/goods_checkbox_selector"
+            android:text="@string/selecte_all"
+            android:textColor="@color/textPrice"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/goods_list"
+            android:textColor="@color/textGray"
+            />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/schedule_edit"
+            android:textColor="@color/textPrice"
+            android:textSize="@dimen/text_size"/>
+    </RelativeLayout>
+
+    <include layout="@layout/gray_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.yizan.community.business.widget.dslv.DragSortListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/gray"
+                android:dividerHeight="1px"
+                dslv:drag_enabled="true"
+                dslv:drag_handle_id="@id/drag_handle"
+                dslv:float_alpha="0.6"
+                dslv:remove_enabled="false"
+                dslv:slide_shuffle_speed="0.3"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include layout="@layout/empty_view" />
+    </RelativeLayout>
+
+    <include layout="@layout/gray_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_pull"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:minHeight="48dp">
+
+            <TextView
+                android:id="@+id/tv_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_pull_on"
+                android:drawablePadding="@dimen/margin_micro"
+                android:gravity="center"
+                android:text="@string/msg_putaway_text"
+                android:textColor="@color/textTheme"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_micro"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:background="@color/gray"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_remove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:minHeight="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_remove"
+                android:drawablePadding="@dimen/margin_micro"
+                android:gravity="center_vertical"
+                android:text="@string/delete"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

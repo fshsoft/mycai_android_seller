@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/customer_tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#83B92D"
+            android:text="1593***1236"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            />
+
+        <TextView
+            android:id="@+id/customer_tv_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/evluation_good"
+            android:textColor="#83B92D"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextViewStyle.Gray"
+        android:id="@+id/customer_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customer_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/customer_tv__time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-03-11 22：40"
+                android:layout_marginLeft="@dimen/margin"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/customer_btn_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/order_reply"
+            android:background="@drawable/new_btn_style"
+            android:textColor="#83B92D"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sjhf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:textColor="#F69D5A"
+                android:text="@string/business_reply"/>
+            <TextView
+                android:id="@+id/customer_reply_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_big"
+                android:textColor="#F69D5A"
+                android:text="@string/msg_thanks_text"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/customer_reply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-03-11 22：40"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:background="#E9E8E8"/>
+
+
+</LinearLayout>

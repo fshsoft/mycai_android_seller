@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.yizan.community.business.ui.AddBankActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bank_add_notice"/>
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:maxLength="20"
+        android:background="@drawable/corners_disable"
+        android:hint="@string/hint_bank_user_name"/>
+    <EditText
+        android:id="@+id/et_bank_name"
+        style="@style/EditTextStyle"
+
+        android:layout_marginTop="@dimen/margin_small"
+        android:maxLength="40"
+        android:hint="@string/hint_bank_name"/>
+    <EditText
+        android:id="@+id/et_bank_num"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:maxLength="30"
+        android:inputType="numberSigned"
+        android:hint="@string/hint_bank_num"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_identifying_code"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:maxLength="6"
+            android:layout_marginRight="@dimen/margin"
+            android:inputType="number"
+            android:hint="@string/hint_bank_identifying_code"/>
+        <Button
+            android:id="@+id/btn_identifying_code"
+            style="@style/TextViewStyle.Gray"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/corners_button_rich_selector"
+            android:gravity="center"
+            android:text="@string/lable_get_identifying"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/bank_add_send_identifying_code"/>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="@dimen/margin_large_biger"
+        android:text="@string/commit"/>
+
+</LinearLayout>

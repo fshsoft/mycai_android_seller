@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:dslv="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.CatesListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        >
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/msg_goods_classfiy"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule_edit"
+            android:textColor="@color/textPrice"
+            android:textSize="@dimen/text_size"/>
+    </LinearLayout>
+    <include layout="@layout/gray_line" />
+    <com.yizan.community.business.widget.dslv.DragSortListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="false"
+        dslv:slide_shuffle_speed="0.3"/>
+    <include layout="@layout/gray_line" />
+    <include layout="@layout/empty_view" />
+
+</LinearLayout>

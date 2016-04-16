@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/login_head"
+            android:textColor="@color/primary"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_head"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@+id/tv_head"
+            android:background="@drawable/corners_pink_normal"
+            android:paddingLeft="@dimen/margin_micro"
+            android:paddingRight="@dimen/margin_micro"
+            android:text="@string/label_business"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_mobile"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="@dimen/margin_large"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:drawablePadding="@dimen/margin_small"
+        android:hint="@string/hint_mobile"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="@dimen/margin"
+        android:drawableLeft="@drawable/ic_pwd"
+        android:drawablePadding="@dimen/margin_small"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:maxLength="20" />
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        style="@style/TextViewStyle"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/label_forget_password"
+        android:textColor="@color/primary" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="@dimen/margin_large_big"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/login_protocol"
+        style="@style/TextViewStyle.Label"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/margin"
+        android:textColor="@color/textGray" />
+
+
+</LinearLayout>

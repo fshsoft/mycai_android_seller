@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/feed_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/style_edt_boder"
+        android:layout_margin="@dimen/margin"
+        android:hint="@string/hint_edt_feed_back"
+        android:gravity="left"
+        android:padding="@dimen/margin"
+        android:textColor="@color/textPrimary"/>
+</LinearLayout>

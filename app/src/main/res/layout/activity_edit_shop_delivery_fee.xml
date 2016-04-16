@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.yizan.community.business.ui.EditShopDeliveryFeeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin">
+
+        <TextView
+            android:id="@+id/common_edit_text_tv"
+            style="@style/TextViewStyle"
+            android:text="@string/title_activity_edit_shop_delivery_fee"
+            />
+
+        <EditText
+            android:id="@+id/et_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_size"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_yuan"/>
+    </LinearLayout>
+
+</RelativeLayout>

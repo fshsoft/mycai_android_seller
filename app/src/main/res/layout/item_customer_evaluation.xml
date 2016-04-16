@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin">
+
+        <com.zongyou.library.widget.CircleImageView
+            android:id="@+id/eva_head"
+            android:layout_width="@dimen/text_view_height"
+            android:layout_height="@dimen/text_view_height"
+            android:layout_marginLeft="@dimen/margin_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/eva_mobile"
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:id="@+id/eva_status"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eva_content"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="horizontal">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/eva_image1"
+                    android:layout_width="@dimen/image_height"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/eva_image2"
+                    android:layout_width="@dimen/image_height"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/eva_image3"
+                    android:layout_width="@dimen/image_height"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/eva_date"
+                style="@style/TextViewStyle.Gray"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/gray_line_margin" />
+</LinearLayout>

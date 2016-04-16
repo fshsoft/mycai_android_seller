@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small"
+        android:src="@drawable/ic_calendar"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/title_bar_margin"
+        android:text="@string/app_name"
+        android:textSize="@dimen/title_bar_text_size"
+        android:textColor="@color/titleText"
+        android:textStyle="bold" />
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/title_right"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingLeft="@dimen/margin_small"-->
+            <!--android:paddingRight="@dimen/margin_small"-->
+            <!--android:src="@drawable/ic_search"/>-->
+        <SearchView
+            android:id="@+id/title_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="@string/hint_order_search"
+            android:searchIcon="@drawable/ic_search_title"
+            android:imeOptions="actionSearch"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+</RelativeLayout>

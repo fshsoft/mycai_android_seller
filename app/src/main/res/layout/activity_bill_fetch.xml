@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_extract_money"/>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:textColor="@color/textPrice"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_line_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_yet_extract_money"/>
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:maxLength="8"
+                    android:numeric="decimal"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/tv_fetch_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_all_roll_out"
+                    android:textColor="@color/textLink"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:background="@color/bg_gray">
+
+                <Button
+                    android:id="@+id/btn_fetch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/corners_pink_selector"
+                    android:text="@string/msg_go_to_extract"
+                    android:textColor="@color/textWhite"/>
+            </RelativeLayout>
+            <include layout="@layout/gray_line" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:text="@string/msg_user_manage"/>
+            <include layout="@layout/gray_line_margin"/>
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:text="@string/msg_opening_bank"/>
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin"
+                android:text="@string/msg_opening_bank_name"/>
+            <TextView
+                android:id="@+id/tv_bank_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:text="@string/msg_card_number"/>
+            <include layout="@layout/gray_line"/>
+            <include layout="@layout/gray_line_height" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:text="@string/explain"/>
+            <include layout="@layout/gray_line_margin"/>
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:text="@string/msg_nothing_text"/>
+            <include layout="@layout/gray_line"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_add_head"
+    android:layout_width="match_parent"
+    android:background="@color/bg_gray"
+    android:layout_height="@dimen/banner_height">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_img"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_add_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_micro"
+            android:textColor="@color/textGray"
+            android:text="@string/click_upload_photo"/>
+    </RelativeLayout>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_sale_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="@string/stop_shop"
+        android:textColor="@color/textWhite"/>
+
+    <TextView
+        android:id="@+id/tv_add_pic_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000"
+        android:gravity="center"
+        android:padding="@dimen/margin_small"
+        android:text="@string/click_upload_photo"
+        android:textColor="@color/textWhite"/>
+</RelativeLayout>

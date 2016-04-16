@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="half_translucence">#70000000</color>
+    <!-- 分隔线 -->
+    <color name="theme_divide_line">#DEDCDD</color>
+    <color name="background">#F2EFEF</color>
+
+    <color name="primary">#FF2D4B</color>
+    <color name="primaryDark">#F7415B</color>
+    <color name="grayBack">#FBFBFB</color>
+
+    <color name="gray">#D8D6D7</color>
+    <color name="grayDark">#A1A1A1</color>
+    <color name="white">#FFFFFF</color>
+    <!--text color-->
+
+    <color name="textPrimary">#313233</color>
+    <color name="textGray">#979797</color>
+    <color name="textWhite">#FFFFFF</color>
+    <color name="textYellow">#DE973C</color>
+    <color name="textLink">#06B10A</color>
+    <color name="bg_gray">#F8F8F8</color>
+    <color name="textBlue">#4DADE5</color>
+    <color name="red_bg">#FF2D4C</color>
+    <color name="sh">#F8A916</color>
+    <color name="titleText">#313233</color>
+    <color name="titleBackground">#FFFFFF</color>
+
+    <color name="textPrice">#FF2D4B</color>
+    <!-- 主题颜色 -->
+    <color name="textTheme">#FF2D4B</color>
+
+    <!-- 主题背景颜色 -->
+    <color name="bgTheme">#FF2D4B</color>
+    <!-- hint颜色-->
+    <color name="textHint">#BEBEBE</color>
+    <!-- 订单列表状态颜色-->
+    <color name="text_order_list_state">#4DADE5</color>
+</resources>
+

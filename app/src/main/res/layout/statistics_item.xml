@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:background="@color/gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:background="@drawable/list_selector" >
+
+        <com.zongyou.library.widget.CustomImageView
+            android:id="@+id/statistics_iamge"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin" />
+
+        <TextView
+            android:id="@+id/statistics_price"
+            style="@style/TextViewStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:textColor="@color/textPrice"/>
+
+        <LinearLayout
+            android:id="@+id/statistics_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_toLeftOf="@id/statistics_price"
+            android:layout_toRightOf="@id/statistics_iamge"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/sevice_title"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/sevice_time"
+                android:layout_marginTop="@dimen/common_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

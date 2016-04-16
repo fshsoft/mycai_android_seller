@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/order_item_goods"
+            style="@style/TextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:text="@string/goods"
+            android:singleLine="false"
+            android:layout_marginRight="@dimen/margin"/>
+
+        <TextView
+            android:id="@+id/order_item_amount"
+            style="@style/TextViewStyle"
+            android:text="@string/amount"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_norms_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_list"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_good"
+        android:showDividers="middle|beginning">
+
+    </LinearLayout>
+</RelativeLayout>

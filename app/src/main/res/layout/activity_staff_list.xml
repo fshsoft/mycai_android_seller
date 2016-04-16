@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.StaffListActivity">
+
+    <include layout="@layout/gray_line_height"/>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@color/white"
+        android:listSelector="@drawable/list_selector"/>
+    <include layout="@layout/gray_line" />
+    <include layout="@layout/empty_view"/>
+</LinearLayout>

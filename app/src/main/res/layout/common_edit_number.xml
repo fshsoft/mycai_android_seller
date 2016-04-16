@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/common_edit_number_tv"
+            style="@style/TextViewStyle"
+            android:text="@string/detail_contact_telephone_number"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"/>
+        <EditText
+            android:id="@+id/common_edit_number_edt"
+            style="@style/EditTextStyle"
+            android:layout_gravity="center"
+            android:inputType="phone"
+            android:maxLength="11"
+            />
+    </LinearLayout>
+
+</LinearLayout>

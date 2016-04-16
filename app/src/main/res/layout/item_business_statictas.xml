@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/business_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/textGray"
+        android:text="2015-03-29 6:00"
+        android:layout_margin="@dimen/margin"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/business_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/textGray"
+        android:text="@string/commission_income"
+        android:layout_margin="@dimen/margin"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/business_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textPrimary"
+        android:text="@string/order_sn_2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/business_time"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/business_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textPrice"
+        android:text="+198.00元"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/business_title"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_list"
+        android:layout_marginLeft="@dimen/margin"/>
+
+</RelativeLayout>

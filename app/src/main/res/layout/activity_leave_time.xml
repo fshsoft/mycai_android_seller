@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/time_leave_txt_start"
+ />
+
+    <RelativeLayout
+        android:id="@+id/leave_start_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/frame_gray_normal">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/leave_start_text"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_small"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_small"
+            android:src="@drawable/leave_time_blue" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/time_leave_txt_end"/>
+
+    <RelativeLayout
+        android:id="@+id/leave_end_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/frame_gray_normal">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/leave_end_text"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_small"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_small"
+            android:src="@drawable/leave_time_blue" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/remark_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/margin_large_big"
+        android:background="@drawable/frame_gray_normal"
+        android:gravity="top|left"
+        android:hint="@string/time_leave_hint"
+        android:maxLength="50"
+        android:padding="@dimen/margin_small"
+        android:textSize="@dimen/text_size" />
+
+
+    <Button
+        android:id="@+id/time_confirm"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_large_big"
+        android:text="@string/confirm" />
+</LinearLayout>

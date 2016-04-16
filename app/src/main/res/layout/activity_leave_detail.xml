@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/gray_line_height" />
+    <TextView
+        style="@style/TextViewStyle.Gray"
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin"
+        android:minHeight="@dimen/text_view_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"/>
+    <include layout="@layout/gray_line_margin" />
+    <TextView
+        style="@style/TextViewStyle.Gray"
+        android:id="@+id/tv_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin"
+        android:minHeight="@dimen/text_view_height"
+        android:textSize="@dimen/text_size"
+        android:gravity="center_vertical"/>
+
+    <include layout="@layout/gray_line_height" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin"
+        android:minHeight="@dimen/text_view_height"
+        android:textColor="@color/textPrice"
+        android:textSize="@dimen/text_size_small"
+        android:gravity="center_vertical"
+        android:text="@string/leave_desc"/>
+
+
+    <Button
+        android:id="@+id/btn_call"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="@dimen/margin_large_big"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/leave_call" />
+</LinearLayout>

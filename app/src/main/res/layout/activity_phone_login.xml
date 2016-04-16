@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1.0"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/TextViewStyle.Gray"
+            android:layout_margin="@dimen/margin_small"
+            android:text="@string/label_phone_login_head"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1.0"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_mobile"
+            style="@style/EditTextStyle"
+            android:drawableLeft="@drawable/ic_mobile"
+            android:drawablePadding="@dimen/margin_small"
+            android:hint="@string/hint_mobile"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginTop="@dimen/margin">
+
+            <EditText
+                style="@style/EditTextStyle"
+                android:id="@+id/identify_code_et"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="1"
+                android:background="@drawable/corners_white"
+                android:hint="@string/label_identifying_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="@dimen/margin_small"
+                android:singleLine="true" />
+
+            <TextView
+                style="@style/TextViewStyle.Gray"
+                android:id="@+id/get_identifying"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:background="@drawable/corners_button_rich_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/lable_get_identifying"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewStyle.Label"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/lable_no_get_identifying"
+            android:textColor="@color/primary"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextViewStyle.Label"
+            android:id="@+id/tv_forget_pwd"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/label_forget_password"
+            android:textColor="@color/primary" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/margin_large_big"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/phone_login_protocol"
+            style="@style/TextViewStyle.Label"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin"
+            android:textColor="@color/textGray" />
+    </LinearLayout>
+
+</LinearLayout>

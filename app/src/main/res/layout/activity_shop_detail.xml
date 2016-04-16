@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/shop_names"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_name_text"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/business_name" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_logos"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/business_Logo" />
+
+                <com.zongyou.library.widget.CircleImageView
+                    android:id="@+id/shop_logo_img"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/shop_default" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_announcement"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_announcement_text"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/msg_store_notice" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/divider_list" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_status_text"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/msg_Operating_Status_open" />
+
+                <ImageView
+                    android:id="@+id/shop_status_img"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/btn_on" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_time"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_time_text"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/msg_business_time" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="@dimen/margin"
+                    android:text="@string/msg_delivery_time_2" />
+
+                <com.yizan.community.business.widget.MyGridView
+                    android:id="@+id/shop_delivery_grid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:listSelector="@drawable/list_selector"
+                    android:numColumns="auto_fit" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="@dimen/margin"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_tell"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_tell_text"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/detail_contact_telephone_number" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_service_fee"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_service_fee"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/title_activity_edit_shop_service_fee" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:id="@+id/shop_delivery_fee"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_delivery_fee"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/title_activity_edit_shop_delivery_fee" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_commission"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/title_activity_edit_shop_commission" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/title_activity_edit_shop_offline_pay" />
+
+                <ImageView
+                    android:id="@+id/iv_offline_pay"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/btn_on" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/divider_list" />
+            <LinearLayout
+                android:id="@+id/shop_bank_info"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bank_info"
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/title_activity_shop_edit_bank_info" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gray_arrow_right_primary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/divider_list" />
+
+        <LinearLayout
+            android:id="@+id/shop_area_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_area_text"
+                style="@style/TextViewStyle"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                tools:text="@string/msg_server_area" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:src="@drawable/gray_arrow_right_primary" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_list" />
+
+        <LinearLayout
+            android:id="@+id/shop_address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_address_text"
+                style="@style/TextViewStyle"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                tools:text="@string/msg_server_area" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:src="@drawable/gray_arrow_right_primary" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@drawable/divider_list" />
+
+        <LinearLayout
+            android:id="@+id/shop_address_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_address_detail_text"
+                style="@style/TextViewStyle"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                tools:text="@string/msg_server_area" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:src="@drawable/gray_arrow_right_primary" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_list" />
+
+        <LinearLayout
+            android:id="@+id/shop_service_scope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shop_service_scope_text"
+                style="@style/TextViewStyle"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:text="@string/msg_server_area"
+                 />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:src="@drawable/gray_arrow_right_primary" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/divider_list" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/business_describe" />
+
+            <RelativeLayout
+                android:id="@+id/shop_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin">
+
+                <ImageView
+                    android:id="@+id/ic_icon"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/gray_arrow_right_primary" />
+
+                <TextView
+                    android:id="@+id/shop_introduction_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_toLeftOf="@id/ic_icon"
+                    android:maxLines="5"
+                     />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

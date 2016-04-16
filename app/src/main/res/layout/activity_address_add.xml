@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.tencent.tencentmap.mapsdk.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        style="@style/EditTextStyle"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/margin_small"
+        android:hint="@string/hint_address_select" />
+
+    <EditText
+        android:id="@+id/address_detail_et"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/address_tv"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:drawableLeft="@drawable/ic_local"
+        android:drawablePadding="@dimen/margin_small"
+        android:hint="@string/hint_address_detail_input" />
+
+    <Button
+        android:id="@+id/address_save"
+        style="@style/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:text="@string/save" />
+
+</RelativeLayout>

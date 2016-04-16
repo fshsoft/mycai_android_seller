@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="swipe_container" type="id"></item>
+    <item name="frame_content" type="id"/>
+    <item name="drag_handle" type="id"/>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_translucence"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/corners_gray_white"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/primary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/order_reply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/dialog_text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/margin_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dip"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/bg_edittext_normal">
+
+            <EditText
+                android:id="@+id/dialog_input_edi"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@null"
+                android:editable="true"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLength="50"
+                android:minLines="6"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="90dip"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@drawable/corners_pink_selector"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/dialog_button_cancel"
+                android:layout_width="90dip"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@drawable/corners_gray_selector"
+                android:text="@string/cancel"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.ServiceAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:background="@color/white"
+            android:focusableInTouchMode="true">
+
+            <include layout="@layout/layout_good_edit_head" />
+            <include layout="@layout/gray_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_server_name"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="@string/msg_must_input"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"/>
+
+            <include layout="@layout/gray_line_height"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"/>
+
+                <EditText
+                    android:id="@+id/et_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:maxLength="8"
+                    android:selectAllOnFocus="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_yuan"
+                    android:textColor="@color/textGray"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_time_duration"/>
+
+                <EditText
+                    android:id="@+id/et_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:numeric="signed"
+                    android:singleLine="true"
+                    android:maxLength="8"
+                    android:selectAllOnFocus="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minute"
+                    android:textColor="@color/textGray"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_server_staff"/>
+
+                <TextView
+                    android:id="@+id/tv_worker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/margin"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"/>
+
+            <include layout="@layout/gray_line_height"/>
+
+            <LinearLayout
+                android:id="@+id/ll_good_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="@string/server_describe"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+            <include layout="@layout/comm_divide_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/wv_brief"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></WebView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include layout="@layout/gray_line"/>
+
+    <include layout="@layout/layout_good_edit_bottom"/>
+</LinearLayout>

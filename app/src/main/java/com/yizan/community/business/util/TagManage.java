@@ -1,0 +1,82 @@
+package com.yizan.community.business.util;
+
+/**
+ * Created by ycxu
+ * on 2016/1/29.
+ */
+public class TagManage {
+    public static final String MAIN_ACTIVITY="A首页";
+    public static final String LOGIN_ACTIVITY="A登录界面";
+    public static final String ADDBANK_ACTIVITY="A添加银行卡界面";
+    public static final String ALL_EVALUATION_FRAGMENT="F所有评价";
+    public static final String BAD_EVALUATION_FRAGMENT="F差评";
+    public static final String BANK_MGR_ACTIVITY="A银行卡管理界面";
+    public static final String BIL_FETCH_ACTIVITY ="A提现";
+    public static final String BIND_CHECK_MOBILE_ACTIVITY="A修改绑定手机号";
+    public static final String BUSINESS_STATICTAS_ACTIVITY="A业务统计";
+    public static final String CATEADD_ACTIVITY="A添加分类";
+    public static final String CATES_LIST_ACTIVITY="A商品管理/服务管理";
+    public static final String CHANGED_MOBILE_ACTIVITY="A验证手机号";
+    public static final String CHANGED_PASSWORD_ACTIVITY="A修改密码";
+    public static final String CHECK_OLD_MOBILE_ACTIVITY="A验证旧手机";
+    public static final String COMMISSION_LIST_ACTIVITY="A佣金";
+    public static final String EDIT_MOBILE_ACTIVITY="A修改手机号码";
+    public static final String EDIT_SHOP_ADDRESS_ACTIVITY="A店铺地址";
+    public static final String EDIT_SHOP_ADDRESS_DETAIL_ACTIVITY="A店铺详细地址修改界面";
+    public static final String EDIT_SHOP_ANNOUNTMENT_ACTIVITY="A修改店铺公告界面";
+    public static final String EDIT_SHOP_DELIVERY_ACTIVITY="A修改配送时间";
+    public static final String EDIT_SHOP_DELIVERY_FEE_ACTIVITY="A修改配送费";
+    public static final String EDIT_SHOP_INTRODUCTION_ACTIVITY="A修改店铺介绍";
+    public static final String EDIT_SHOP_NAME_ACTIVITY="A修改店铺名称";
+    public static final String EDIT_SHOP_REGION_ACTIVITY="A店铺所在区域界面";
+    public static final String EDIT_SHOP_SERVICE_FEE_ACTIVITY="A修改起送价";
+    public static final String EDIT_SHOP_TELL_ACTIVITY="A修改店铺电话";
+    public static final String EDIT_SHOP_TIME_ACTIVITY="A修改店铺营业时间";
+    public static final String EVALUATION_ALL_LIST_FRAGMENT="F所有评价";
+    public static final String EVALUATION_DOWN_LIST_FRAGMENT="F差评列表";
+    public static final String EVALUATION_MIDDLE_LIST_FRAGMENT="F中评列表";
+    public static final String EVALUATION_UP_LIST_FRAGMENT="F好评列表";
+    public static final String EVLUATION_MANAGER_ACTIVITY="A评价管理";
+    public static final String FEED_BACK_ACTIVITY="A意见反馈";
+    public static final String FETCH_RECORD_ACTIVITY="A提现记录";
+    public static final String GOOD_ADD_ACTIVITY="A添加商品";
+    public static final String GOOD_DETAIL_ACTIVITY="A商品详情";
+    public static final String GOOD_DETAIL_WEB_ACTIVITY="A商品详情web";
+    public static final String GOOD_EVALUATION_FRAGMENT="F好评列表";
+    public static final String GOODS_CONTAINER_FRAGMENT="F商品列表容器";
+    public static final String GOODS_LIST_ACTIVITY="A商品列表";
+    public static final String GOODS_LIST_FRAGMENT="F商品列表";
+    public static final String GOODS_SEARCH_ACTIVITY="F商品搜索";
+    public static final String INFORM_CENTER_ACTIVITY="A消息中心";
+    public static final String INFORM_DETAILS_ACTIVITY="A消息详情";
+    public static final String LEAVE_DETAILS_ACTIVITY="A订单详情";
+    public static final String LEAVE_HISTORY_LIST_ACTIVITY="A请假列表";
+    public static final String LEAVE_TIME_ACTIVITY="A添加请假界面";
+    public static final String LIST_LEAVE_HISTORY_ACTIVITY="A请假记录";
+    public static final String MONTH_DETAIL_ACTIVITY="A月度营业详情";
+    public static final String MONTH_STATISTICS_ACTIVITY="A营业统计";
+    public static final String MORE_FRAGMENT="F更多";
+    public static final String NEUTRAL_EVALUATION_FRAGMENT="F中评列表";
+    public static final String OPINION_ACTIVITY="A意见反馈";
+    public static final String ORDER_DETAILS_ACTIVITY="A订单详情";
+    public static final String ORDER_LIST_FRAGMENT="F订单列表";
+    public static final String ORDER_MANAGE_LIST_FRAGMENT="F订单管理";
+    public static final String ORDER_NEW_LIST_FRAGMENT="F新订单列表";
+    public static final String ORDER_SEARCH_LIST_ACTIVITY="A订单搜索列表";
+    public static final String PAY_WAY_ACTIVITY="A充值";
+    public static final String PHONE_LOGIN_ACTIVITY="A手机登录";
+    public static final String RECHARGE_ACTIVITY="A我要充值界面";
+    public static final String REVIEWS_REPLY_ACTIVITY="A评价回复界面";
+    public static final String SERVICE_ADD_ACTIVITY="A添加服务";
+    public static final String SETTING_ACTIVITY="A设置";
+    public static final String SHOP_MESSAGE_ACTIVITY="A店铺信息";
+    public static final String STAFF_LIST_ACTIVITY="A服务/配送人员列表";
+    public static final String STATISTICS_ACTIVITY="A统计明细";
+    public static final String STATISTICS_MONTH_ACTIVITY="A月度统计明细";
+    public static final String STORE_PAGE_FRAGMENT="F营业统计";
+    public static final String SUGGESTIONS_ACTIVITY="A意见反馈";
+    public static final String USER_BILL_ACTIVITY="A我的账单";
+    public static final String USER_EDIT_ACTIVITY="A账号管理";
+    public static final String VIEW_IMAGE_ACTIVITY="A查看大图";
+    public static final String BILL_LIST_FRAGMENT="F收入列表";
+}

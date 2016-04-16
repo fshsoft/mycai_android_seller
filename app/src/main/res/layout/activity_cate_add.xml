@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.CateAddActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_trade_cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/margin"
+            android:paddingRight="@dimen/margin"
+            android:paddingTop="@dimen/margin_small"
+            android:text="@string/msg_industry_classfiy"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/text_size_small"/>
+
+        <include layout="@layout/gray_line"/>
+
+        <TextView
+            android:id="@+id/tv_trade_cate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:padding="@dimen/margin"/>
+
+        <include layout="@layout/gray_line"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingTop="@dimen/margin_small"
+        android:text="@string/msg_classfiy_name"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/text_size_small"/>
+
+    <include layout="@layout/gray_line"/>
+
+    <EditText
+        android:id="@+id/et_cate_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin"
+        android:singleLine="true"
+        />
+
+    <include layout="@layout/gray_line"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <Button 
+        android:id="@+id/time_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_small"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/text_size_small"
+        android:paddingTop="@dimen/margin_micro"
+        android:paddingBottom="@dimen/margin_micro"
+        android:layout_margin="@dimen/margin_micro"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/frame_gray_normal"
+        />
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tv_method"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_view_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_margin" />
+
+
+        <LinearLayout
+            android:id="@+id/order_confirmation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/gray_line_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_view_height_mid"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/order_detail_textview.weight"
+                    android:text="@string/detail_contact_person"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_num" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unit_price"
+                style="@style/order_detail_textview.margin"
+                android:text="@string/detail_unit_price" />
+
+            <TextView
+                android:id="@+id/tv_order_code"
+                style="@style/order_detail_textview.margin"
+                android:text="@string/detail_order_code" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/order_detail_textview.margin"
+                android:text="@string/detail_business_hours" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/text_view_height_mid"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/order_detail_textview"
+                        android:minHeight="0dp"
+                        android:text="@string/detail_address_of_service" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/order_detail_textview.weight"
+                        android:minHeight="0dp"
+                        android:text="@string/detail_address_of_service" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:src="@drawable/ic_map" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/gray_line_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_consumables"
+                style="@style/order_detail_textview.margin"
+                android:text="@string/detail_consumables" />
+
+            <TextView
+                android:id="@+id/tv_cleaning"
+                style="@style/order_detail_textview.margin"
+                android:text="@string/detail_cleaning" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                style="@style/order_detail_textview.margin"
+                android:text="@string/detail_notation" />
+
+            <include layout="@layout/gray_line_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/order_detail_textview.weight"
+                    android:minHeight="@dimen/text_view_height"
+                    android:text="@string/detail_total" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line_margin" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_state_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/button_height"
+            android:layout_margin="@dimen/margin"
+            android:background="@drawable/corners_pink_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_micro">
+
+            <TextView
+                android:id="@+id/tv_service_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_service_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/service_notice"
+                android:textSize="@dimen/text_size_micro" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

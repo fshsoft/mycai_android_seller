@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_big"
+            android:textColor="#BEBEBE"
+            android:text="@string/name"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/my_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/text_size"
+            android:layout_marginRight="@dimen/margin"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_list" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/divider_list" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/head_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/label_portrait"
+                android:textColor="#BEBEBE"
+                android:textSize="@dimen/text_size_big" />
+
+            <com.zongyou.library.widget.CircleImageView
+                android:id="@+id/head"
+                android:layout_width="@dimen/edittext_height"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/ic_default_head" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right_primary" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@drawable/divider_list" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:id="@+id/changed_pwd">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_big"
+                android:textColor="#BEBEBE"
+                android:text="@string/user_pwd"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/image_rights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right_primary"
+                android:layout_marginRight="@dimen/margin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/text_size"
+                android:layout_marginRight="@dimen/margin"
+                android:text="@string/label_change_password"
+                android:layout_toLeftOf="@id/image_rights"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@drawable/divider_list" />
+
+
+        <RelativeLayout
+            android:id="@+id/changed_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_big"
+                android:textColor="#BEBEBE"
+                android:text="@string/mobile"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/image_rightss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_right_primary"
+                android:layout_marginRight="@dimen/margin"/>
+            <TextView
+                android:id="@+id/my_mobile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/text_size"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toLeftOf="@id/image_rightss"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_list" />
+
+    <!--<Button-->
+        <!--android:id="@+id/account_save"-->
+        <!--style="@style/ButtonStyle"-->
+        <!--android:layout_margin="@dimen/margin"-->
+        <!--android:text="@string/save" />-->
+</LinearLayout>

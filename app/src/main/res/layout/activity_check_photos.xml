@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yizan.community.business.ui.CheckPhotosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_commit"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/gv_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/text_view_height"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:horizontalSpacing="@dimen/margin"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:padding="@dimen/margin" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/big_button"
+        android:layout_alignParentBottom="true"
+        android:text="@string/msg_all_check"/>
+</RelativeLayout>

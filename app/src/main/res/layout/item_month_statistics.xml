@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/linear_boder"
+        android:orientation="vertical"
+        android:clickable="false">
+        <TextView
+            android:id="@+id/statistics_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_month"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/textPrimary"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_list"/>
+        <TextView
+            android:id="@+id/statistics_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_year"
+            android:textSize="@dimen/text_size_micro"
+            android:textColor="@color/textGray"
+            android:layout_gravity="center"
+            android:background="#F8F8F8"
+            android:padding="@dimen/margin_micro"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statistics_deals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/show_text"/>
+    <TextView
+        android:id="@+id/statistics_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/statistics_deals"
+        android:layout_marginRight="@dimen/margin"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/show_text"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_list"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_below="@id/ll_month"/>
+</RelativeLayout>

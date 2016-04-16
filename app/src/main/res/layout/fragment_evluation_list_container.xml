@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.zongyou.library.widget.CircleImageView
+                android:id="@+id/evluation_head_image"
+                android:layout_width="@dimen/image_width_small"
+                android:layout_height="@dimen/image_width_small" />
+
+            <TextView
+                android:id="@+id/evaluation_head_name"
+                style="@style/TextViewStyle.Gray"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_micro" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/eva_number_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/eva_good_number"
+                    style="@style/TextViewStyle.Gray"
+                    android:text="@string/hundred_1"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                    android:id="@+id/eva_nes_number"
+                    style="@style/TextViewStyle.Gray"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/hundred_2"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginTop="@dimen/margin_small" />
+
+                <TextView
+                    android:id="@+id/eva_bad_number"
+                    style="@style/TextViewStyle.Gray"
+                    android:text="@string/hundred_2"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginTop="@dimen/margin_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_toLeftOf="@id/eva_number_container"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/eva_good_label"
+                        style="@style/TextViewStyle.Gray"
+                        android:text="@string/evluation_good"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ProgressBar
+                        android:id="@+id/evluation_progress_good"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_mid"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:background="@drawable/progress_bg"
+                        android:max="100"
+                        android:layout_gravity="center_vertical"
+                        android:progressDrawable="@drawable/progress_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small" >
+
+                    <TextView
+                        android:id="@+id/eva_nes_label"
+                        style="@style/TextViewStyle.Gray"
+                        android:layout_below="@id/eva_good_number"
+                        android:text="@string/evluation_nes"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ProgressBar
+                        android:id="@+id/evluation_progress_nes"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_mid"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:background="@drawable/progress_bg"
+                        android:layout_gravity="center_vertical"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progress_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small" >
+
+                    <TextView
+                        android:id="@+id/eva_bad_label"
+                        style="@style/TextViewStyle.Gray"
+                        android:text="@string/evluation_bad"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ProgressBar
+                        android:id="@+id/evluation_progress_bad"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_mid"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:background="@drawable/progress_bg"
+                        android:max="100"
+                        android:layout_gravity="center_vertical"
+                        android:progressDrawable="@drawable/progress_color" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/gray_line" />
+
+    <include layout="@layout/gray_line_height" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+</LinearLayout>

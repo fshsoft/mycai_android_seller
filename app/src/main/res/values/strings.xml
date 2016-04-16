@@ -1,0 +1,640 @@
+<resources>
+
+    <string name="app_name">社区服务人员</string>
+    <string name="label_personal_no_login">马上登录</string>
+    <string name="label_about_us">关于我们</string>
+    <string name="switch_account_number">注销账号</string>
+    <string name="msg_error_network">网络连接失败</string>
+    <string name="msg_error_nodata">没有查找到，搜索的数据</string>
+    <string name="msg_error_del">删除失败，请重试</string>
+    <string name="msg_success_bill">提现成功</string>
+    <string name="common_not_more">没有更多</string>
+    <string name="msg_error">查询失败，请重试</string>
+    <string name="msg_error_send">发送失败，请重试</string>
+    <string name="msg_error_update">更新失败，请重试</string>
+    <string name="msg_error_save">保存失败，请重试</string>
+    <string name="old_rder">历史订单</string>
+    <string name="title_order">我的订单</string>
+    <string name="title_profile">个人中心</string>
+    <string name="order">订单</string>
+    <string name="statistics">统计</string>
+    <string name="holiday">请假</string>
+    <string name="holiday_record">请假记录</string>
+    <string name="hint_mobile"> 请输入手机号码</string>
+    <string name="new_hint_mobile"> 请输入新手机号码</string>
+    <string name="old_hint_mobile"> 请输入原手机号码</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="label_forget_password">忘记密码？</string>
+    <string name="label_phone_login">手机快捷登录</string>
+    <string name="title_schedule_eidt">日程编辑</string>
+    <string name="login">登录</string>
+    <string name="title_phone_login">快捷登录</string>
+    <string name="title_pwd_login">密码登录</string>
+    <string name="label_legal_mobile">请输入合法的手机号码</string>
+    <string name="label_six_twenty_identify">请输入6-20位密码</string>
+    <string name="msg_loading_login">正在登录\u2026</string>
+    <string name="label_loging_success">登录成功</string>
+    <string name="msg_success_save">保存成功</string>
+    <string name="label_login_fail">登录失败，请稍后重试</string>
+    <string name="msg_loading">正在加载中\u2026</string>
+    <string name="label_identifying_code">请输入验证码</string>
+    <string name="lable_get_identifying">获取验证码</string>
+    <string name="check_mobile">校验</string>
+    <string name="sure_edit">确认修改</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="now_phone">当前手机号码:%1$s</string>
+    <string name="code_again">重新发送(%1$s)</string>
+    <string name="lable_no_get_identifying">未收到验证码，请联系客服？</string>
+    <string name="label_empty_mobile">手机号码不能为空</string>
+    <string name="label_empty_password">密码不能为空</string>
+    <string name="label_empty_repassword">确认密码不能为空</string>
+    <string name="label_send_success">发送成功</string>
+    <string name="label_empty_identify">验证码不能为空</string>
+    <string name="label_six_identify">请输入6位验证码</string>
+    <string name="label_changedpassword_success">修改密码成功</string>
+    <string name="hint_password_new_ok">请确认密码</string>
+    <string name="change">修改</string>
+    <string name="label_change_fail">修改密码失败，请稍后重试</string>
+    <string name="label_change_password">密码修改</string>
+    <string name="login_head">易赞O2O</string>
+    <string name="label_business">服务人员版</string>
+    <string name="label_phone_login_head">验证手机，马上进入易赞O2O</string>
+    <string name="about_us">关于我们</string>
+    <string name="hint_edt_feed_back">请输入您的宝贵意见和建议，我们会努力为您做的更好...</string>
+    <string name="message">消息通知</string>
+    <string name="tell_pro">您也可以拨打我们的客服热线，</string>
+    <string name="check_ver">检查版本</string>
+    <string name="upgrade">版本升级</string>
+    <string name="upgrade_ignore">忽略更新</string>
+    <string name="msg_error_last_version">当前已是最新版</string>
+    <string name="upgrade_now">马上升级</string>
+    <string name="change_user">切换账号</string>
+    <string name="user_center">我的</string>
+    <string name="inform_center_list">消息列表</string>
+    <string name="label_load_fail">加载失败，请稍后重试</string>
+    <string name="label_update_fail">更新失败，请稍后重试</string>
+    <string name="label_minformation">我的消息</string>
+    <!-- evluation start -->
+    <string name="evluation_good">好评</string>
+    <string name="evluation_nes">中评</string>
+    <string name="evluation_bad">差评</string>
+    <!-- evluation end -->
+
+    <!-- 更多-->
+    <string name="my_commission">我的佣金</string>
+    <string name="business_statistics">业务统计</string>
+    <string name="ask_for_leave">请假</string>
+    <string name="message_notification">消息通知</string>
+    <string name="useing_help">使用帮组</string>
+    <string name="income_detail">收支明细</string>
+    <string name="setting">设置</string>
+    <string name="setting_new_version">检查新版本</string>
+    <string name="setting_new_mobile">改绑手机</string>
+    <string name="new_mobile_check">校验手机号码</string>
+    <string name="label_new_mobile">更改手机号后，需要使用新手机号登录。当前手机号：%1$s</string>
+    <string name="setting_order_accept_auto">是否接单</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="server_clock">服务时间</string>
+    <string name="server_scope">服务范围设置</string>
+    <string name="suggestions">投诉与建议</string>
+
+    <string name="customer_reviews">顾客评价</string>
+
+    <string name="more_logout">退出登录</string>
+
+    <string name="label_portrait">头像</string>
+
+    <string name="nickname">昵称</string>
+    <string name="msg_error_nickname">昵称格式不正确</string>
+
+    <string name="label_getusername">请填写用户名</string>
+
+
+    <!-- 订单 -->
+    <string name="appointment_arg">预约到达时间：%1$s</string>
+    <string name="duration_arg">时长：%1$s</string>
+    <string name="order_sn">订单编号：%1$s</string>
+    <string name="order_sn_2">订单编号：</string>
+    <string name="remark_arg">备注：%1$s</string>
+
+    <string name="contact_with_customers">联系顾客</string>
+    <string name="navigation_path">导航</string>
+    <string name="detail_customer_name">顾客名称：</string>
+    <!-- 订单详情 -->
+    <string name="order_detail">订单详情</string>
+    <string name="no_pay_status">未支付</string>
+    <string name="pay_status">已支付</string>
+    <string name="detail_servicer_title">服务：</string>
+    <string name="detail_valuation_method">计价方式：</string>
+    <string name="detail_business_hours">服务时间：</string>
+    <string name="detail_business_hours_length">服务时长：</string>
+    <string name="detail_order_confirmation">订单确认</string>
+    <string name="detail_service_content">服务内容</string>
+    <string name="detail_number_of_services">服务数量：</string>
+    <string name="detail_contact_person">联&#160;&#160;系&#160;&#160;人：</string>
+    <string name="detail_contact_telephone_number">联系电话：</string>
+    <string name="detail_address_of_service">服务地址：</string>
+    <string name="detail_pick_time">取件时间：</string>
+    <string name="detail_consumables">消&#160;&#160;耗&#160;&#160;品：</string>
+    <string name="detail_cleaning">清洁用品：</string>
+    <string name="detail_play_phone">拨打</string>
+    <string name="detail_navigation">导航</string>
+    <string name="detail_reply">回复</string>
+    <string name="detail_order_code">订单编号：</string>
+    <string name="detail_evaluatione">顾客评价</string>
+    <string name="detail_unit_price">服务价格：</string>
+    <string name="detail_notation">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注：</string>
+    <string name="detail_total">合&#160;&#160;&#160;&#160;&#160;&#160;&#160;计：</string>
+    <string name="detail_prices">费&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;用：</string>
+    <string name="detail_start_service">开始服务</string>
+    <string name="detail_finsh_service">服务完成</string>
+    <string name="detail_keeping_service">服务进行中...</string>
+    <string name="detail_call_name">称呼：</string>
+    <string name="detail_contact_method">联系方式：</string>
+    <string name="detail_pay_way">支付方式：%1$s</string>
+    <string name="detail_my_reply">我的回复：</string>
+    <string name="detail_bg_reply">后台回复：</string>
+    <string name="detail_cancel_reason">取消原因</string>
+    <string name="cancel_order">拒绝订单</string>
+    <string name="ok_order">接受订单</string>
+
+
+    <string name="price_red_yuan"><![CDATA[<font color=\"red\">¥%1$s</font>]]>元</string>
+    <string name="yuan">%1$s元</string>
+    <!-- 日程 -->
+    <string name="schedule">日程</string>
+    <string name="schedule_edit">编辑</string>
+    <string name="schedule_stop">停止接单</string>
+    <string name="schedule_open">开启接单</string>
+    <string name="selecte_all">&#160;&#160;全&#160;   &#160;选&#160;&#160;</string>
+    <string name="selecte_clear">取消全选</string>
+    <string name="label_selecte_idle_schedule">请先选择暂无安排日程</string>
+    <string name="label_selecte_stop_schedule">请先选择停止接单日程</string>
+
+    <!-- 统计 -->
+    <string name="income_statistics">收入统计</string>
+    <string name="statistics_month">按月份</string>
+    <string name="statistics_month_summary">月份收入汇总</string>
+    <string name="install_map_app">请先安装地图APP</string>
+    <string name="err_map_info">获取地址信息失败</string>
+
+    <!-- logout -->
+    <string name="tip">提示</string>
+    <string name="logout">注销</string>
+    <string name="msg_tip_logout">确定退出当前账号？</string>
+    <string name="msg_success_logout">退出登录成功</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="opinion_hint">请填写您的备注</string>
+    <string name="opinion_comfimation">提交意见</string>
+    <string name="commit">提交</string>
+    <string name="opinion">意见反馈</string>
+    <string name="version_detection">版本检测</string>
+    <string name="opinion_edi_text">回复内容不能为空</string>
+    <string name="opinion_finsh">反馈成功</string>
+    <string name="opinion_error">反馈失败</string>
+
+    <!-- 评价 -->
+    <string name="evaluation">评价</string>
+    <!--  -->
+    <string name="confirm">确认</string>
+    <string name="complete">完成</string>
+    <string name="add_text">添加</string>
+    <string name="batch_delete">批量删除</string>
+    <string name="delete">删除</string>
+    <string name="select_all">全选</string>
+    <string name="select_other">反选</string>
+    <string name="label_read">设为已读</string>
+    <string name="msg_error_select">请至少选择一项</string>
+    <string name="use_help">使用帮助</string>
+    <string name="time_settings_txt">服务时间设置</string>
+    <string name="time_list_txt">服务时间列表</string>
+    <string name="time_leave_txt">请假</string>
+    <string name="time_leave_history_txt">请假历史</string>
+    <string name="time_leave_historylist">请假记录</string>
+    <string name="time_leave_txt_start">开始请假时间</string>
+    <string name="time_leave_txt_end">结束请假时间</string>
+    <string name="time_leave_text">请假事由不能为空</string>
+    <string name="time_leave_hint">请输入你的请假原因</string>
+    <string name="zhi">至</string>
+
+
+    <string name="permanent_settings_text">常驻地点设置</string>
+    <string name="consumption_setting_text">服务商圈设置</string>
+    <string name="hint_address_select">请选择地址</string>
+    <string name="hint_address_detail_input">请输入详细地址</string>
+    <string name="title_address_detail">详细地址：</string>
+    <string name="save">保存</string>
+    <string name="check_new_mobile">验证新手机</string>
+    <string name="save_success">保存成功</string>
+    <string name="sure">确定</string>
+    <string name="text_area">请圈定服务范围</string>
+    <string name="msg_error_location_device_not_support">定位失败，设备不支持</string>
+    <string name="msg_error_location_select">位置选择错误，请重新选择</string>
+    <string name="msg_error_location_save">保存常用地址失败</string>
+    <string name="msg_error_location">定位失败</string>
+
+    <string name="please_time_settings">请选择服务时间:</string>
+    <string name="service_repetition">服务重复</string>
+    <string name="time_repetition">重复时间</string>
+    <string name="week_set_repetition">请选择星期</string>
+    <string name="time_set_repetition">请选择时间</string>
+
+    <!-- 星期 -->
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+
+    <!-- 常驻地址 start -->
+    <string name="label_permanent_address_add">设置常驻地址</string>
+    <string name="hint_address_search">请输入大厦名或小区名</string>
+    <string name="point_map">地图上的点</string>
+    <string name="msg_error_address_empty">地址不能为空</string>
+    <!-- 常驻地址 end -->
+    <!-- 修改个人信息 -->
+    <string name="user_edit_title">个人资料</string>
+    <string name="user_head">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="user_pwd">密码</string>
+    <string name="user_tel">电话</string>
+    <string name="take_a_picture">拍照模式</string>
+    <string name="anycall_album">手机相册</string>
+    <string name="msg_loading_cach">更新中...</string>
+    <string name="msg_loading_save">保存中...</string>
+    <string name="msg_loading_get">获取中...</string>
+    <string name="msg_loading_delete">删除中...</string>
+    <string name="msg_loading_add">添加中...</string>
+    <string name="msg_loading_submit">反馈中...</string>
+    <string name="msg_succ_add">添加成功</string>
+    <string name="remark">备注</string>
+    <string name="msg_failed_add">添加失败</string>
+    <string name="msg_succ_update">保存成功</string>
+    <string name="msg_failed_update">保存失败</string>
+    <string name="msg_no_update">请修改后保存</string>
+    <string name="login_protocol_pink">《免责声明》</string>
+    <string name="login_protocol">点击登陆，即表示您同意%1$s</string>
+
+    <string name="msg_bad_params">参数错误</string>
+    <string name="msg_select_head">请先选择头像</string>
+    <string name="msg_select_photos">请先选择图片</string>
+
+    <!-- 请假 -->
+    <string name="holiday_begin_time">开始请假时间</string>
+    <string name="holiday_end_time">结束请假时间</string>
+    <string name="holiday_reason_hint">请输入你的请假原因</string>
+    <string name="msg_err_badtime">请选择请假时间</string>
+    <string name="msg_err_bigendtime">结束时间必须大小开始时间</string>
+    <string name="msg_err_badreason">请输入请假原因</string>
+
+    <!-- 日程 -->
+    <string name="schedule_tab_1">待完成订单</string>
+    <string name="schedule_tab_2">历史订单</string>
+    <string name="schedule_type">按类型</string>
+    <string name="service_car_type">服务车型：</string>
+    <string name="order_state_arg">订单状态：%1s</string>
+    <string name="order_state">订单状态：</string>
+
+    <!-- 服务 -->
+    <string name="start_service">开始服务</string>
+    <string name="service_notice">(时间到达自动完成服务)</string>
+    <string name="surplus_time">剩余时间</string>
+    <string name="finish_service">结束服务</string>
+    <string name="click_finish_clear">点击完成服务</string>
+
+    <!-- 日程 -->
+    <string name="title_schedule_detail">日程详情</string>
+
+    <!-- 请假 -->
+    <string name="leave_time">时间：</string>
+    <string name="leave_remark">理由：</string>
+    <string name="leave_call">电话咨询</string>
+    <string name="levae_check">请假审核</string>
+    <string name="leave_desc">您请假申请已提交到后台，审核预计需要一个工作日，请耐心等待或咨询后台。</string>
+    <string name="title_activity_check_photos">照片核实</string>
+    <string name="title_activity_take_photos">衣物拍照</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <!--订单-->
+    <string name="client_text">客&#160;&#160;户&#160;&#160;人：</string>
+    <string name="order_amount">订单金额：</string>
+    <string name="order_reply">回复</string>
+    <string name="order_write">填写</string>
+    <string name="order_refund">退款原因：</string>
+    <string name="order_evaluatione"> 用户评价：</string>
+    <string name="order_work_log">工作日志</string>
+    <string name="order_no_logs">暂无日志</string>
+    <string name="textview_first">&#160;&#160;</string>
+
+    <string name="order_service_name">服务名称</string>
+    <string name="order_service_price">服务价格</string>
+
+    7
+    <string name="place_orders">下单</string>
+    <string name="select">选择</string>
+    <string name="clean_order">清空账单</string>
+    <string name="selectde">已选择%1$s项</string>
+    <!--order start-->
+    <string name="order_time_arg">顾客下单时间：%1$s</string>
+    <string name="order_no_arg">#%1$s</string>
+    <string name="order_count_arg">共%1$s件</string>
+    <string name="order_amount_arg">实收：%1$s元(含配送费)</string>
+    <string name="order_sn_arg">订单号%1$s</string>
+    <string name="order_count_amount_arg">共计%1$s单，金额¥%2$s元</string>
+    <string name="order_count_amount_init">共计0单，金额¥0元</string>
+    <string name="hint_order_search">请输入商品名称、订单号、收货人姓名</string>
+    <string name="order_user_arg">%1$s&#160;&#160;&#160;&#160;%2$s</string>
+    <string name="order_app_arg">预约到达时间：%1$s</string>
+    <string name="order_goods_finish_time_arg">送达时间：%1$s</string>
+    <string name="order_service_finish_time_arg">完成时间：%1$s</string>
+    <string name="goods">商品</string>
+    <string name="count">数量</string>
+    <string name="amount">金额</string>
+    <string name="coupon_money">优惠券</string>
+    <string name="delivery_fee">配送费</string>
+    <string name="total">合计</string>
+    <string name="dilivery_staff_name">配送员：%1$s</string>
+    <string name="service_staff_name">服务人员：%1$s</string>
+    <string name="price_arg">¥%1$s</string>
+    <string name="goods_amount_arg">¥%1$s x %2$s</string>
+    <string name="goods_name_arg">%1$s(%2$s)</string>
+    <string name="count_arg">x%1$s</string>
+    <string name="km_arg">%1$skm</string>
+    <string name="order_finish">订单完成</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_start_service">开始服务</string>
+    <string name="order_start_goods">开始配送</string>
+    <string name="order_accept">接单</string>
+    <string name="order_change">更换</string>
+    <string name="msg_error_content_empty">内容不能为空</string>
+
+    <string name="label_delivery_info">配送信息</string>
+    <string name="label_buyer_info">买家信息</string>
+    <string name="label_goods_info">商品信息</string>
+    <string name="label_order_info">订单信息</string>
+    <!--order end-->
+
+    <!-- user center -->
+    <string name="user_service_tel">服务热线：</string>
+
+    <!-- store start -->
+    <string name="store_today_stat">今日营业统计</string>
+    <string name="store_balance">账户余额</string>
+    <string name="store_order_nums">订单数</string>
+    <string name="store_trun_over">营业额</string>
+    <string name="store_fun_goods">商品管理</string>
+    <string name="store_fun_service">服务管理</string>
+    <string name="store_fun_comments">评价管理</string>
+    <string name="store_fun_analyse">经营分析</string>
+    <string name="store_fun_detail">店铺信息</string>
+    <string name="store_address_arg">店铺地址：%1$s</string>
+    <string name="store_address_text">店铺地址</string>
+    <string name="store_address_detail_arg">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;%1$s</string>
+    <string name="store_region_arg">所在地区：%1$s</string>
+    <string name="label_region">所在地区</string>
+    <string name="store_fun_check">店铺对账</string>
+    <string name="store_not_open">暂未开放</string>
+
+    <string name="hello_world">hello_world</string>
+    <string name="action_settings">action_setting</string>
+    <string name="title_activity_cates_list">商品管理</string>
+    <string name="title_activity_goods_list">商品列表</string>
+    <string name="title_activity_cate_add">添加分类</string>
+    <string name="title_activity_good_add">添加商品</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_goods_search">GoodsSearchActivity</string>
+    <string name="title_activity_service_add">ServiceAddActivity</string>
+    <string name="title_activity_user_bill">我的账单</string>
+    <string name="title_activity_bill_fetch">我要提现</string>
+    <string name="title_activity_fetch_record">提现记录</string>
+    <string name="title_activity_good_detail">商品预览</string>
+    <string name="title_activity_staff_list">选择人员</string>
+    <string name="title_activity_edit_shop_service_fee">起送价</string>
+    <string name="title_activity_edit_shop_delivery_fee">配送费</string>
+    <string name="title_activity_edit_shop_commission">佣金比例：</string>
+    <string name="title_activity_edit_shop_offline_pay">货到付款：</string>
+    <string name="title_activity_shop_edit_bank_info">银行卡管理</string>
+
+    <string name="msg_remark_text">备注：</string>
+    <string name="msg_nothing_text">无</string>
+    <string name="msg_wait_check_text">待审核</string>
+    <string name="msg_yet_to_account_text">已到账</string>
+    <string name="msg_yet_refuse_text">已拒绝</string>
+    <string name="msg_goods_number_text">%1$s个商品</string>
+    <string name="msg_delete_classify_text">删除分类</string>
+    <string name="msg_delete_classify_hint">此分类下已有商品，不允许删除。如需删除分类，请先删除分类下的商品。</string>
+    <string name="msg_is_delete_hint">确定删除该分类？</string>
+    <string name="msg_reply_succeed">回复成功</string>
+    <string name="msg_sales_volume_text">销量:%1$d</string>
+    <string name="msg_before_price">¥%1$s</string>
+    <string name="msg_leave_time_text">请假时间:</string>
+    <string name="msg_leave_reason_text">理由:</string>
+    <string name="date_fomat_1">yyyy.MM.dd</string>
+    <string name="date_fomat_2">yyyy-MM-dd HH:mm:ss</string>
+    <string name="date_fomat_3">HH:mm</string>
+    <string name="date_fomat_4">yyyy-MM-dd  HH:mm</string>
+    <string name="date_fomat_5">MM月dd日 HH:mm</string>
+    <string name="date_fomat_6">MM/dd HH:mm</string>
+
+    <string name="msg_is_delele_image">是否删除图片?</string>
+    <string name="msg_year">年</string>
+    <string name="msg_month">月</string>
+    <string name="msg_day">日</string>
+    <string name="msg_turnover">成交%1$d笔</string>
+    <string name="msg_accumulative_money">累计收入¥%1$s元</string>
+    <string name="msg_accumulative_money_2">累计收入 </string>
+    <string name="all">全部</string>
+    <string name="all_number">全部%1$d</string>
+    <string name="income">收入</string>
+    <string name="withdraw_deposit">提现</string>
+    <string name="good_evaluate">好评%1$d</string>
+    <string name="middle_evaluate">中评%1$d</string>
+    <string name="bad_evaluate">差评%1$d</string>
+    <string name="msg_user_comment">用户评价</string>
+    <string name="msg_putaway_goods">上架商品</string>
+    <string name="msg_sold_out_goods">下架商品</string>
+    <string name="msg_delivering">配送中(%1$s)</string>
+    <string name="msg_all_order">全部(%1$s)</string>
+    <string name="msg_opening_bank">开户行:</string>
+    <string name="msg_card_number">卡号:</string>
+    <string name="msg_opening_bank_name">开户名:</string>
+    <string name="tip_sum_not_zero">提现金额不能为0</string>
+    <string name="tip_sum_not_exceed">提现金额不能大于当前余额</string>
+    <string name="tip_import_verification_code">请输入验证码</string>
+    <string name="tip_import_sex_verification_code">请输入6位的验证码</string>
+    <string name="msg_error_afresh_obtain">验证失败,请重新获取验证码</string>
+    <string name="msg_select_business_classfiy">请选择行业分类</string>
+    <string name="msg_error_classfiy_name">分类名称不少于2个字符</string>
+    <string name="msg_update_scceed">更新成功</string>
+    <string name="msg_import_old_phone_number">请输入旧手机号码</string>
+    <string name="msg_import_new_phone_number">请输入新手机号码</string>
+    <string name="msg_err_phone_number_is_null">您的手机号码为空，请检查是否已登录！</string>
+    <string name="msg_check_old_phone_number">验证旧手机</string>
+    <string name="msg_change_phone_number">修改手机号码</string>
+    <string name="msg_unkown_loction">未知位置</string>
+    <string name="area_text">区</string>
+    <string name="city">市</string>
+    <string name="msg_error_invalid_location">无效坐标</string>
+    <string name="now_location_text">目前您所在的位置：</string>
+    <string name="location">定位</string>
+    <string name="label_text">标注</string>
+    <string name="msg_error_address_error">地址错误</string>
+    <string name="msg_error_search_no_null">搜索内容不能为空</string>
+    <string name="msg_error_lovation_jurisdiction">定位权限被禁用!</string>
+    <string name="msg_error_nofound_lovation_hint">亲，还没找到您输入的位置哦,搜索一下吧！</string>
+    <string name="msg_store_notice">店铺公告：</string>
+    <string name="msg_store_notice_2">店铺公告</string>
+    <string name="msg_delivery_time">配送时间</string>
+    <string name="msg_delivery_time_2">配送时间：</string>
+    <string name="msg_err_time_select">结束时间不能小于等于开始时间</string>
+    <string name="msg_err_time_overlap">时间不能重叠，请检查！</string>
+    <string name="msg_store_introduce">店铺简介：</string>
+    <string name="msg_store_introduce_2">店铺简介</string>
+    <string name="business_name">店铺名称：</string>
+    <string name="business_name_2">店铺名称</string>
+    <string name="msg_store_mobile">联系电话：</string>
+    <string name="msg_store_mobile_2">联系电话</string>
+    <string name="msg_not_reply">未回复(%1$s)</string>
+    <string name="msg_yet_reply">已回复(%1$s)</string>
+    <string name="msg_comment_manage">评价管理</string>
+    <string name="msg_opinion_not_null">意见不能为空！</string>
+    <string name="msg_opinion_err">反馈失败，请重试</string>
+    <string name="msg_goods_add">商品添加</string>
+    <string name="msg_select_image_err">选择图片文件出错</string>
+    <string name="msg_select_image">请选择照片</string>
+    <string name="msg_err_name">名称不能少于2个字符</string>
+    <string name="msg_import_price">请输入价格</string>
+    <string name="msg_import_time">请输入时长</string>
+    <string name="msg_import_repertory">请输入库存</string>
+    <string name="msg_import_type">请输入型号</string>
+    <string name="msg_select_goods">请先选择商品</string>
+    <string name="msg_putaway_text">上架</string>
+    <string name="msg_sold_out_text">下架</string>
+    <string name="msg_import_goods_name">请输入商品名称</string>
+    <string name="msg_import_text_num">0/50字</string>
+    <string name="msg_present_import_text_num">/50字</string>
+    <string name="msg_new_order">新订单</string>
+    <string name="msg_order_manage">订单管理</string>
+    <string name="store">店铺</string>
+    <string name="my">我的</string>
+    <string name="msg_month_detail">月详情</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="msg_finish_number">成交%1$s笔</string>、
+    <string name="yuan_2">¥%1$s元</string>
+    <string name="setup_push_msg_switch">接收系统消息</string>
+    <string name="msg_month_statistics">按月份统计</string>
+    <string name="msg_receive_order_succeed">接收订单成功</string>
+    <string name="msg_cancel_order_succeed">取消订单成功</string>
+    <string name="msg_finish_order_succeed">完成订单成功</string>
+    <string name="msg_select_staff">选择人员成功</string>
+    <string name="msg_comment_reply_succeed">评价回复</string>
+    <string name="msg_server_add">服务添加</string>
+    <string name="msg_select_server_staff">请选择服务人员</string>
+    <string name="msg_vertion_hint">当前版本V</string>
+    <string name="msg_Operating_Status_open">营业状态：正常营业</string>
+    <string name="msg_Operating_Status_pause">营业状态：暂停营业</string>
+    <string name="msg_business_time">营业时间：</string>
+    <string name="msg_contact_number">联系电话：</string>
+    <string name="msg_server_area">服务范围：</string>
+    <string name="msg_not_available">暂无</string>
+    <string name="msg_send_price">起送价：%1$s元</string>
+    <string name="msg_freight_text">配送费：%1$s元</string>
+    <string name="msg_RMB">¥%1$s</string>
+    <string name="msg_unkown">未知</string>
+    <string name="msg_today">今天</string>
+    <string name="msg_tomorrow">明天</string>
+    <string name="msg_super_tomorrow">后天</string>
+    <string name="msg_dd_number">dd号</string>
+    <string name="Monday">星期一</string>
+    <string name="Tuesday">星期二</string>
+    <string name="Wednesday">星期三</string>
+    <string name="Thursday">星期四</string>
+    <string name="Friday">星期五</string>
+    <string name="Saturday">星期六</string>
+    <string name="Sunday">星期日</string>
+    <string name="msg_extract_money">可提现金额：</string>
+    <string name="msg_yet_extract_money">提现金额：</string>
+    <string name="msg_all_roll_out">全部转出</string>
+    <string name="msg_go_to_extract">发起提现</string>
+    <string name="msg_user_manage">账户信息</string>
+    <string name="explain">说明</string>
+    <string name="msg_industry_classfiy">行业分类</string>
+    <string name="msg_classfiy_name">分类名称</string>
+    <string name="msg_goods_classfiy">产品分类列表</string>
+    <string name="msg_all_check">全部核实</string>
+    <string name="msg_yuan">元</string>
+    <string name="date">日期</string>
+    <string name="money">金额</string>
+    <string name="status">状态</string>
+    <string name="msg_goods_name">商品名称：</string>
+    <string name="price">价格：</string>
+    <string name="inventory">库存：</string>
+    <string name="add_goods_norms">添加商品规格</string>
+    <string name="goods_describe">商品描述</string>
+    <string name="input_goods_describe">请输入描述</string>
+    <string name="select_norms">选择规格</string>
+    <string name="goods_detail">商品详情</string>
+    <string name="back_look">退出预览</string>
+    <string name="input_address">请输入地址</string>
+    <string name="search">搜索</string>
+    <string name="yet_succeed">已完成</string>
+    <string name="msg_server_name">服务名称：</string>
+    <string name="msg_must_input">必填</string>
+    <string name="msg_time_duration">时长：</string>
+    <string name="minute">分钟</string>
+    <string name="msg_server_staff">服务人员：</string>
+    <string name="server_describe">服务描述：</string>
+    <string name="input_server_describe">请输入描述</string>
+    <string name="preview">预览</string>
+    <string name="business_Logo">店铺Logo：</string>
+    <string name="business_describe">店铺介绍：</string>
+    <string name="user_balance">账户余额（元）</string>
+    <string name="money_text">¥0</string>
+    <string name="name">姓名</string>
+    <string name="mobile">手机号</string>
+    <string name="hundred_1">100%</string>
+    <string name="hundred_2">&#160;&#160;0.0%</string>
+    <string name="msg_all_comment">总体评价</string>
+    <string name="goods_list">产品列表</string>
+    <string name="commission_income">佣金收入</string>
+    <string name="msg_thanks_text">您的支持，就是我最大的动力</string>
+    <string name="business_reply">商家回复：</string>
+    <string name="show_text">xxxxxxxxxxxxxxx</string>
+    <string name="type">型号：</string>
+    <string name="click_upload_photo">点击上传照片</string>
+    <string name="stop_shop">停止售卖</string>
+    <string name="loading">加载中...</string>
+    <string name="tip_reply_hint">请认真回复，250字以内</string>
+    <string name="title_activity_bank_mgr">银行卡管理</string>
+    <string name="shop_no_bank_info">您还没有绑定银行卡</string>
+    <string name="btn_add_bank">添加银行卡</string>
+    <string name="title_activity_add_bank">添加银行卡</string>
+    <string name="bank_add_notice">请绑定持卡人本人的银行卡</string>
+    <string name="bank_add_send_identifying_code">验证码发送至您绑定的手机号</string>
+    <string name="hint_bank_user_name">请输入持卡人姓名</string>
+    <string name="hint_bank_name">请输入开户行全称</string>
+    <string name="hint_bank_num">请输入开户行账号</string>
+    <string name="hint_bank_identifying_code">请输入验证码</string>
+    <string name="hint_bank_remove">确定删除银行卡信息?</string>
+    <string name="err_bank_user_name">请输入持卡人姓名</string>
+    <string name="err_bank_name">请输入有效的开户行名称</string>
+    <string name="err_bank_num">请输入有效的开户行账号</string>
+    <string name="title_activity_good_detail_web">商品详情</string>
+
+    <string name="btn_recharge">充值</string>
+    <string name="btn_fetch">提现</string>
+
+    <string name="msg_pay_success">支付成功</string>
+    <string name="msg_pay_error">支付失败</string>
+    <string name="msg_pay_cancel">支付取消</string>
+    <string name="msg_select_pay_way">请选择支付方式</string>
+    <string name="msg_weixin_un_installed">微信未安装</string>
+    <string name="user_bill_tab_recharge">充值</string>
+</resources>

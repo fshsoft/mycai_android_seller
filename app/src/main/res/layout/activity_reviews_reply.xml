@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_reply"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:background="@color/white"
+        android:padding="@dimen/margin"
+        android:gravity="top"
+        android:hint="@string/opinion_hint"
+        android:maxLength="500"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/text_size_small" />
+
+    <Button
+        android:id="@+id/btn_reply"
+        style="@style/ButtonStyle"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/order_reply"/>
+
+</LinearLayout>

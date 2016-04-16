@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="com.yizan.community.business.ui.UserBillActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_bill_head"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:drawableLeft="@drawable/ic_bill"
+            android:drawablePadding="@dimen/margin_micro"
+            android:gravity="center_vertical"
+            android:text="@string/user_balance"
+            android:textColor="@color/textWhite"/>
+
+        <TextView
+            android:id="@+id/tv_all_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/margin"
+            android:text="@string/money_text"
+            android:textColor="@color/textWhite"
+            android:textSize="40sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_fetch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1.0"
+            android:background="@drawable/corners_pink_selector"
+            android:text="@string/btn_fetch"
+            android:textColor="@color/textWhite"/>
+
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/corners_secondary_selector"
+            android:text="@string/btn_recharge"
+            android:textColor="@color/textWhite"/>
+    </LinearLayout>
+
+    <include layout="@layout/gray_line"/>
+
+    <include layout="@layout/gray_line_height"/>
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+</LinearLayout>
