@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">社区服务人员</string>
+    <string name="app_name">My菜商家版</string>
     <string name="label_personal_no_login">马上登录</string>
     <string name="label_about_us">关于我们</string>
     <string name="switch_account_number">注销账号</string>
