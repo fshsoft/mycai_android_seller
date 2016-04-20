@@ -3,7 +3,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/background"
-            tools:context="com.yizan.community.business.ui.StorePageFragment">
+            tools:context="com.fiftyonemycai365.seller.business.ui.StorePageFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:background="@color/gray"/>
-        <com.yizan.community.business.widget.MyGridView
+        <com.fiftyonemycai365.seller.business.widget.MyGridView
             android:id="@+id/gv_func"
             android:layout_marginTop="@dimen/margin"
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.yizan.community.business.ui.AddBankActivity">
+    tools:context="com.fiftyonemycai365.seller.business.ui.AddBankActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

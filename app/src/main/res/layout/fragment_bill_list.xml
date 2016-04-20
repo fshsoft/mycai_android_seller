@@ -2,7 +2,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="com.yizan.community.business.ui.BillListFragment">
+                tools:context="com.fiftyonemycai365.seller.business.ui.BillListFragment">
 
     <in.srain.cube.views.loadmore.LoadMoreListViewContainer
         android:id="@+id/load_more_list_view_container"

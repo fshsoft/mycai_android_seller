@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yizan.community.business.ui.GoodsListFragment">
+              tools:context="com.fiftyonemycai365.seller.business.ui.GoodsListFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             >
 
-            <com.yizan.community.business.widget.dslv.DragSortListView
+            <com.fiftyonemycai365.seller.business.widget.dslv.DragSortListView
                 android:id="@+id/lv_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

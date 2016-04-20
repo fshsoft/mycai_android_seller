@@ -3,7 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yizan.community.business.ui.GoodAddActivity">
+              tools:context="com.fiftyonemycai365.seller.business.ui.GoodAddActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                     android:singleLine="true"/>
             </LinearLayout>
 
-            <com.yizan.community.business.widget.MyListView
+            <com.fiftyonemycai365.seller.business.widget.MyListView
                 android:id="@+id/lv_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

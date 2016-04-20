@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yizan.community.business.ui.BindCheckMobileActivity">
+    tools:context="com.fiftyonemycai365.seller.business.ui.BindCheckMobileActivity">
 
     <TextView
         android:id="@+id/bind_mobile"

@@ -188,7 +188,7 @@
                     android:layout_marginTop="@dimen/margin"
                     android:text="@string/msg_delivery_time_2" />
 
-                <com.yizan.community.business.widget.MyGridView
+                <com.fiftyonemycai365.seller.business.widget.MyGridView
                     android:id="@+id/shop_delivery_grid"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

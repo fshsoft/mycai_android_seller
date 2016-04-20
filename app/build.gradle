@@ -21,7 +21,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.yizan.community.business"
+        applicationId "com.fiftyonemycai365.seller.business"
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 10
@@ -34,7 +34,7 @@ android {
         buildConfigField 'String', 'APP_CHANNEL', '"FanWe"'
         buildConfigField 'String','MAP_ID','"WNRBZ-QBKA3-DD43U-3C6BS-TDRYT-67FSH"'
         buildConfigField 'String', 'WX_APP_ID', '"wxa2ca4ec0aa044c24"'
-        manifestPlaceholders = [TENCENTMAPSDK_VALUE: 'WNRBZ-QBKA3-DD43U-3C6BS-TDRYT-67FSH',JPUSH_APPKEY_VALUE: '51e2d29d39e52a23aeda0126']
+        manifestPlaceholders = [TENCENTMAPSDK_VALUE: 'WNRBZ-QBKA3-DD43U-3C6BS-TDRYT-67FSH',JPUSH_APPKEY_VALUE: 'cb752a0c8b03a663ca00181d']
     }
     productFlavors {
         shnow_cn {

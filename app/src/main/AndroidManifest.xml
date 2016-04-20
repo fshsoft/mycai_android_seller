@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.yizan.community.business"
+<manifest package="com.fiftyonemycai365.seller.business"
           xmlns:android="http://schemas.android.com/apk/res/android"
           android:versionCode="1"
           android:versionName="0.1.04.21">
@@ -52,7 +52,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus"/>
 
     <application
-        android:name=".YizanApplication"
+        android:name="com.fiftyonemycai365.seller.business.YizanApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -60,7 +60,7 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.LoadingActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.LoadingActivity"
             android:label="@string/app_name"
             android:noHistory="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -71,58 +71,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.MainActivity"
             android:launchMode="singleTask"
             android:theme="@style/TabTheme"/>
-        <activity android:name=".ui.OrderSearchListActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.OrderSearchListActivity"/>
         <activity
-            android:name=".ui.NewbieGuideActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.NewbieGuideActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        <activity android:name=".ui.SettingActivity"/>
-        <activity android:name=".ui.WebViewActivity"/>
-        <activity android:name=".ui.LoginActivity"/>
-        <activity android:name=".ui.ChangedPasswordActivity"/>
-        <activity android:name=".ui.PhoneLoginActivity"/>
-        <activity android:name=".ui.ViewImageActivity"/>
-        <activity android:name=".ui.StatisticsActivity"/>
-        <activity android:name=".ui.OpinionActivity"/>
-        <activity android:name=".ui.StatisticsMonthActivity"/>
-        <activity android:name=".ui.InformCenterActivity"/>
-        <activity android:name=".ui.InformDetailsActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.SettingActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.WebViewActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.LoginActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.ChangedPasswordActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.PhoneLoginActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.ViewImageActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.StatisticsActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.OpinionActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.StatisticsMonthActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.InformCenterActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.InformDetailsActivity"/>
         <activity
-            android:name=".ui.InputBoxDialogActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.InputBoxDialogActivity"
             android:theme="@style/activity_full_transparent"/>
         <!-- 更多 -->
-        <activity android:name=".ui.LeaveTimeActivity"/>
-        <activity android:name=".ui.LeaveHistoryListActivity"/>
-        <activity android:name=".ui.UserEditActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.LeaveTimeActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.LeaveHistoryListActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.UserEditActivity"/>
         <activity
-            android:name=".ui.WeekActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.WeekActivity"
             android:theme="@style/activity_full_transparent"/>
-        <activity android:name=".ui.DistrictRangeActivity"/>
-        <activity android:name=".ui.ReviewsReplyActivity"/>
-        <activity android:name=".ui.SuggestionsActivity"/>
-        <activity android:name=".ui.OrderDetailsActivity"/>
-        <activity android:name=".ui.LeaveDetailsActivity"/>
-        <activity android:name=".ui.CommissionListActivity"/>
-        <activity android:name=".ui.EditMobileActivity"/>
-        <activity android:name=".ui.FeedBackActivity"/>
-        <activity android:name=".ui.ChangedMobileActivity"/>
-        <activity android:name=".ui.CheckOldMobileActivity"/>
-        <activity android:name=".ui.BusinessStatictasActivity"/>
-        <activity android:name=".ui.MonthStatisticsActivity"/>
-        <activity android:name=".ui.MonthDetailActivity"/>
-        <activity android:name=".ui.SHopMessageActivity"/>
-        <activity android:name=".ui.EditShopNameActivity"/>
-        <activity android:name=".ui.EditShopAnnountmentActivity"/>
-        <activity android:name=".ui.EditShopTellActivity"/>
-        <activity android:name=".ui.EditShopIntroductionActivity"/>
-        <activity android:name=".ui.EditShopDeliveryActivity"/>
-        <activity android:name=".ui.EditShopTimeActivity"/>
-        <activity android:name=".ui.EvluationManagerActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.DistrictRangeActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.ReviewsReplyActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.SuggestionsActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.OrderDetailsActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.LeaveDetailsActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.CommissionListActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditMobileActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.FeedBackActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.ChangedMobileActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.CheckOldMobileActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.BusinessStatictasActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.MonthStatisticsActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.MonthDetailActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.SHopMessageActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopNameActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopAnnountmentActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopTellActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopIntroductionActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopDeliveryActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopTimeActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EvluationManagerActivity"/>
 
         <receiver
-            android:name=".util.PushReceiver"
+            android:name="com.fiftyonemycai365.seller.business.util.PushReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
@@ -132,45 +132,45 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".ui.BindCheckMobileActivity"/>
-        <activity android:name=".ui.CatesListActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.BindCheckMobileActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.CatesListActivity"/>
         <activity
-            android:name=".ui.GoodsListActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.GoodsListActivity"
             android:theme="@style/TabTheme"/>
-        <activity android:name=".ui.CateAddActivity"/>
-        <activity android:name=".ui.GoodAddActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.CateAddActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.GoodAddActivity"/>
         <activity
-            android:name=".ui.GoodsSearchActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.GoodsSearchActivity"
             android:label="@string/title_activity_goods_search"
             android:theme="@style/TabTheme"/>
         <activity
-            android:name=".ui.ServiceAddActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.ServiceAddActivity"
             android:label="@string/title_activity_service_add"/>
         <activity
-            android:name=".ui.UserBillActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.UserBillActivity"
             android:label="@string/title_activity_user_bill"
             android:theme="@style/TabTheme"/>
         <activity
-            android:name=".ui.BillFetchActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.BillFetchActivity"
             android:label="@string/title_activity_bill_fetch"/>
         <activity
-            android:name=".ui.FetchRecordActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.FetchRecordActivity"
             android:label="@string/title_activity_fetch_record"/>
         <activity
-            android:name=".ui.GoodDetailActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.GoodDetailActivity"
             android:label="@string/title_activity_good_detail"/>
         <activity
-            android:name=".ui.StaffListActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.StaffListActivity"
             android:label="@string/title_activity_staff_list"/>
         <activity
-            android:name=".ui.EditShopServiceFeeActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.EditShopServiceFeeActivity"
             android:label="@string/title_activity_edit_shop_service_fee"/>
         <activity
-            android:name=".ui.EditShopDeliveryFeeActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.EditShopDeliveryFeeActivity"
             android:label="@string/title_activity_edit_shop_delivery_fee"/>
-        <activity android:name=".ui.EditShopAddressActivity"/>
-        <activity android:name=".ui.EditShopAddressDetailActivity"/>
-        <activity android:name=".ui.EditShopRegionActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopAddressActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopAddressDetailActivity"/>
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.EditShopRegionActivity"/>
 
         <meta-data
             android:name="JPUSH_APPKEY"
@@ -181,20 +181,20 @@
             android:value="${TENCENTMAPSDK_VALUE}"/>
 
         <activity
-            android:name=".ui.BankMgrActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.BankMgrActivity"
             android:label="@string/title_activity_bank_mgr">
         </activity>
         <activity
-            android:name=".ui.AddBankActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.AddBankActivity"
             android:label="@string/title_activity_add_bank">
         </activity>
         <activity
-            android:name=".ui.GoodDetailWebActivity"
+            android:name="com.fiftyonemycai365.seller.business.ui.GoodDetailWebActivity"
             android:label="@string/title_activity_good_detail_web">
         </activity>
-        <activity android:name=".ui.RechargeActivity">
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.RechargeActivity">
         </activity>
-        <activity android:name=".ui.PayWayActivity">
+        <activity android:name="com.fiftyonemycai365.seller.business.ui.PayWayActivity">
         </activity>
 
 

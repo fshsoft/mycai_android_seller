@@ -77,7 +77,7 @@ public class Constants {
     }
 
     // 微信支付
-    public static final String ACTION_PAY_RESULT = "com.yizan.community.business.WXPAY_RECEIVED";
+    public static final String ACTION_PAY_RESULT = "com.fiftyonemycai365.seller.business.WXPAY_RECEIVED";
 
     public static final String PAY_TYPE_WEICHAT = "weixin";
     public static final String PAY_TYPE_ALIPAY = "alipay";

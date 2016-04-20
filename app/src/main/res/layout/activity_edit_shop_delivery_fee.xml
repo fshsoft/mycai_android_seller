@@ -2,7 +2,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="com.yizan.community.business.ui.EditShopDeliveryFeeActivity">
+                tools:context="com.fiftyonemycai365.seller.business.ui.EditShopDeliveryFeeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

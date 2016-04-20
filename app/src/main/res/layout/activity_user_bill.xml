@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:background="@color/white"
               android:orientation="vertical"
-              tools:context="com.yizan.community.business.ui.UserBillActivity">
+              tools:context="com.fiftyonemycai365.seller.business.ui.UserBillActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -3,7 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="com.yizan.community.business.ui.GoodDetailActivity">
+              tools:context="com.fiftyonemycai365.seller.business.ui.GoodDetailActivity">
 
     <ScrollView
         android:layout_width="match_parent"
