@@ -60,11 +60,11 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
     protected void initView() {
         GridView gv = mViewFinder.find(R.id.gv_func);
         List<FuncItem> list = new ArrayList<>();
-        list.add(createFunc(getString(R.string.store_fun_goods), R.drawable.ic_store_goods));
-        list.add(createFunc(getString(R.string.store_fun_service), R.drawable.ic_store_service));
+        //list.add(createFunc(getString(R.string.store_fun_goods), R.drawable.ic_store_goods));
+        //list.add(createFunc(getString(R.string.store_fun_service), R.drawable.ic_store_service));
         list.add(createFunc(getString(R.string.store_fun_comments), R.drawable.ic_store_comments));
         list.add(createFunc(getString(R.string.store_fun_analyse), R.drawable.ic_store_analyse));
-        list.add(createFunc(getString(R.string.store_fun_detail), R.drawable.ic_store_detail));
+        //list.add(createFunc(getString(R.string.store_fun_detail), R.drawable.ic_store_detail));
         list.add(createFunc(getString(R.string.store_fun_check), R.drawable.ic_store_check));
         StoreFuncAdapter adapter = new StoreFuncAdapter(getActivity(), list);
         gv.setAdapter(adapter);
