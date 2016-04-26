@@ -73,6 +73,7 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = null;
                 switch (i) {
+                    /*
                     case 0:
                         intent = new Intent(getActivity(), CatesListActivity.class);
                         intent.putExtra(Constants.EXTRA_DATA, Constants.GOODS_TYPE.GOODS);
@@ -83,10 +84,11 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
                         intent.putExtra(Constants.EXTRA_DATA, Constants.GOODS_TYPE.SERVICE);
                         startActivity(intent);
                         break;
-                    case 2:
+                    */
+                    case 0:
                         startActivity(new Intent(getActivity(),EvluationManagerActivity.class));
                         break;
-                    case 3: //经营分析
+                    case 1: //经营分析
                         UserInfo userInfo = PreferenceUtils.getObject(getActivity(), UserInfo.class);
                         String token = PreferenceUtils.getValue(getActivity(), Constants.TOKEN_LOGIN, "");
                         if(userInfo != null || !TextUtils.isEmpty(token)){
@@ -96,10 +98,12 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
                             startActivity(intent1);
                         }
                         break;
+                        /*
                     case 4:
                         startActivity(new Intent(getActivity(), SHopMessageActivity.class));
                         break;
-                    case 5:
+                       */
+                    case 2:
                         ToastUtils.show(getActivity(), R.string.store_not_open);
                         break;
 
