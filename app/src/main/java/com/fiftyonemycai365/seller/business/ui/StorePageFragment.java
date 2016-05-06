@@ -104,7 +104,15 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
                         break;
                        */
                     case 2:
-                        ToastUtils.show(getActivity(), R.string.store_not_open);
+                        //ToastUtils.show(getActivity(), R.string.store_not_open);
+                        UserInfo userInfo1 = PreferenceUtils.getObject(getActivity(), UserInfo.class);
+                        String token1 = PreferenceUtils.getValue(getActivity(), Constants.TOKEN_LOGIN, "");
+                        if(userInfo1 != null || !TextUtils.isEmpty(token1)){
+                            String url = String.format(URLConstants.SHOP_RECONCILIATION, token1, userInfo1.id);
+                            Intent intent1 = new Intent(getActivity(), WebViewActivity.class);
+                            intent1.putExtra(Constants.EXTRA_URL, url);
+                            startActivity(intent1);
+                        }
                         break;
 
                 }
