@@ -60,10 +60,10 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
     protected void initView() {
         GridView gv = mViewFinder.find(R.id.gv_func);
         List<FuncItem> list = new ArrayList<>();
-        //list.add(createFunc(getString(R.string.store_fun_goods), R.drawable.ic_store_goods));
+        list.add(createFunc(getString(R.string.store_fun_analyse), R.drawable.ic_store_analyse));
         //list.add(createFunc(getString(R.string.store_fun_service), R.drawable.ic_store_service));
         list.add(createFunc(getString(R.string.store_fun_comments), R.drawable.ic_store_comments));
-        list.add(createFunc(getString(R.string.store_fun_analyse), R.drawable.ic_store_analyse));
+        list.add(createFunc(getString(R.string.store_fun_goods), R.drawable.ic_store_goods));
         //list.add(createFunc(getString(R.string.store_fun_detail), R.drawable.ic_store_detail));
         list.add(createFunc(getString(R.string.store_fun_check), R.drawable.ic_store_check));
         StoreFuncAdapter adapter = new StoreFuncAdapter(getActivity(), list);
@@ -85,10 +85,8 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
                         startActivity(intent);
                         break;
                     */
-                    case 0:
-                        startActivity(new Intent(getActivity(),EvluationManagerActivity.class));
-                        break;
-                    case 1: //经营分析
+
+                    case 0: //经营分析
                         UserInfo userInfo = PreferenceUtils.getObject(getActivity(), UserInfo.class);
                         String token = PreferenceUtils.getValue(getActivity(), Constants.TOKEN_LOGIN, "");
                         if(userInfo != null || !TextUtils.isEmpty(token)){
@@ -98,13 +96,29 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
                             startActivity(intent1);
                         }
                         break;
-                        /*
-                    case 4:
-                        startActivity(new Intent(getActivity(), SHopMessageActivity.class));
+                    case 1:
+                        startActivity(new Intent(getActivity(),EvluationManagerActivity.class));
                         break;
-                       */
+
                     case 2:
+                        /*
+                        startActivity(new Intent(getActivity(), SHopMessageActivity.class));
+                        break;*/
+                        intent = new Intent(getActivity(), CatesListActivity.class);
+                        intent.putExtra(Constants.EXTRA_DATA, Constants.GOODS_TYPE.GOODS);
+                        startActivity(intent);
+                        break;
+
+                    case 3:
                         ToastUtils.show(getActivity(), R.string.store_not_open);
+                        UserInfo userInfo1 = PreferenceUtils.getObject(getActivity(), UserInfo.class);
+                        String token1 = PreferenceUtils.getValue(getActivity(), Constants.TOKEN_LOGIN, "");
+                        if(userInfo1 != null || !TextUtils.isEmpty(token1)){
+                            String url = String.format(URLConstants.SHOP_RECONCILIATION, token1, userInfo1.id);
+                            Intent intent1 = new Intent(getActivity(), WebViewActivity.class);
+                            intent1.putExtra(Constants.EXTRA_URL, url);
+                            startActivity(intent1);
+                        }
                         break;
 
                 }

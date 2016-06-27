@@ -319,6 +319,11 @@ public class URLConstants {
      */
     public static final String ORDER_STATISTIC = DOMAIN + "order.statistics?token=%s&userId=%d";
 
+    /**
+     * 店铺对账URL地址
+     */
+    public static final String SHOP_RECONCILIATION = DOMAIN + "order.cateincome?token=%s&userId=%d";
+
     // 删除银行账户信息
     public static final String USER_BANK_DEL = DOMAIN + "seller.delbankinfo";
     // 商家添加/编辑银行卡信息
