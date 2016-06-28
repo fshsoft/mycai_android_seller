@@ -65,6 +65,7 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
         list.add(createFunc(getString(R.string.store_fun_comments), R.drawable.ic_store_comments));
         list.add(createFunc(getString(R.string.store_fun_analyse), R.drawable.ic_store_analyse));
         //list.add(createFunc(getString(R.string.store_fun_detail), R.drawable.ic_store_detail));
+        list.add(createFunc(getString(R.string.store_fun_goods), R.drawable.ic_store_goods));
         list.add(createFunc(getString(R.string.store_fun_check), R.drawable.ic_store_check));
         StoreFuncAdapter adapter = new StoreFuncAdapter(getActivity(), list);
         gv.setAdapter(adapter);
@@ -73,13 +74,13 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = null;
                 switch (i) {
-                    /*
-                    case 0:
+
+                    case 2:
                         intent = new Intent(getActivity(), CatesListActivity.class);
                         intent.putExtra(Constants.EXTRA_DATA, Constants.GOODS_TYPE.GOODS);
                         startActivity(intent);
                         break;
-                    case 1:
+                    /* case 1:
                         intent = new Intent(getActivity(), CatesListActivity.class);
                         intent.putExtra(Constants.EXTRA_DATA, Constants.GOODS_TYPE.SERVICE);
                         startActivity(intent);
@@ -103,7 +104,7 @@ public class StorePageFragment extends BaseFragment implements OnClickListener{
                         startActivity(new Intent(getActivity(), SHopMessageActivity.class));
                         break;
                        */
-                    case 2:
+                    case 3:
                         //ToastUtils.show(getActivity(), R.string.store_not_open);
                         UserInfo userInfo1 = PreferenceUtils.getObject(getActivity(), UserInfo.class);
                         String token1 = PreferenceUtils.getValue(getActivity(), Constants.TOKEN_LOGIN, "");

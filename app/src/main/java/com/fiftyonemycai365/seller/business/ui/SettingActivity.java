@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.fiftyonemycai365.seller.business.YizanApplication;
 import com.tu.upgrade.DownloadCompleteReceiver;
 import com.tu.upgrade.UpgradeManager;
 import com.fiftyonemycai365.seller.business.R;
@@ -58,7 +59,9 @@ public class SettingActivity extends BaseActivity implements TitleListener, OnCl
         mViewFinder.find(R.id.personal_logout).setOnClickListener(this);
         mViewFinder.find(R.id.version_detection).setOnClickListener(this);
         versionText = mViewFinder.find(R.id.version_detection_text);
-        versionText.setText(getString(R.string.msg_vertion_hint) + mConfig.appVersion);
+//        versionText.setText(getString(R.string.msg_vertion_hint) + mConfig.appVersion);
+
+        versionText.setText(getString(R.string.msg_vertion_hint) + YizanApplication.getVersion());
         mViewFinder.find(R.id.feed_back).setOnClickListener(this);
 //        SlideButton slideButton = mViewFinder.find(R.id.setting_order_slidebutton);
 //        slideButton.setStateChanageListener(new SlideButton.StateChanageListener() {

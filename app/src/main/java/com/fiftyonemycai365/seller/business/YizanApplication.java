@@ -1,6 +1,8 @@
 package com.fiftyonemycai365.seller.business;
 
 import android.app.Application;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 
 import com.tu.crop.CropHelper;
 import com.fiftyonemycai365.seller.business.db.DBManager;
@@ -47,5 +49,17 @@ public class YizanApplication extends Application {
         ZYStatConfig.setInstallChannel(getApplicationContext(), BuildConfig.APP_CHANNEL);
         ZYStatConfig.setAutoExceptionCaught(true);
         ZYStatConfig.setTagCheck(false);
+    }
+
+    public static String getVersion() {
+        PackageManager packageManager = getInstance().getPackageManager();
+        PackageInfo packInfo;
+        try {
+            packInfo = packageManager.getPackageInfo(getInstance().getPackageName(), 0);
+            String version = packInfo.versionName;
+            return version;
+        } catch (PackageManager.NameNotFoundException e) {
+            return "";
+        }
     }
 }
