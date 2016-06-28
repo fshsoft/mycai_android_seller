@@ -322,7 +322,6 @@ public class URLConstants {
     /**
      * 店铺对账 URI地址
      */
-
     public static final String SHOP_RECONCILIATION = DOMAIN + "order.cateincome?token=%s&userId=%d";
 
     // 删除银行账户信息
